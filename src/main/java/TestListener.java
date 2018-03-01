@@ -8,6 +8,7 @@ import java.util.NoSuchElementException;
 public class TestListener implements ITestListener {
   public void onTestStart(ITestResult result) {
 
+    getComment(result);
   }
 
   public void onTestSuccess(ITestResult result) {
@@ -26,7 +27,7 @@ public class TestListener implements ITestListener {
 //    System.out.println("ANNOTATION: " + testCaseAnnotation);
 //    System.out.println("Test Case id: " + testCaseAnnotation.id()); // верни значение внутри аннотации
 
-    getComment(result);
+//    getComment(result);
 
   }
 
