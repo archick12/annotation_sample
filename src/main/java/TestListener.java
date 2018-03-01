@@ -47,6 +47,6 @@ public class TestListener implements ITestListener {
         DescriptionAnnotation testDescriptionAnnotation = method.getAnnotation(DescriptionAnnotation.class); // Где бы я не выполнялся, Java верни
         // аннотацию из метода в котором я выполняюсь. Похожим образом можно сделать для класса.
         System.out.println("ANNOTATION: " + testDescriptionAnnotation);
-        System.out.println("Jira id: " + testDescriptionAnnotation.comment()); // верни значение внутри аннотации
+        System.out.println("Description comment: " + testDescriptionAnnotation.comment()); // верни значение внутри аннотации
     }
 }
